@@ -1,0 +1,28 @@
+{
+  "name": "rsr-library-api",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prestart": "npm run build",
+    "start": "node dist/main.js",
+    "check": "node .rsr/check.cjs"
+  },
+  "dependencies": {
+    "@nestjs/common": "12.0.4",
+    "@nestjs/core": "12.0.4",
+    "@nestjs/mapped-types": "12.0.0",
+    "@nestjs/platform-express": "12.0.4",
+    "@nestjs/typeorm": "12.0.1",
+    "better-sqlite3": "12.11.1",
+    "class-transformer": "0.5.1",
+    "class-validator": "0.15.1",
+    "reflect-metadata": "0.2.2",
+    "rxjs": "7.8.2",
+    "typeorm": "0.3.31"
+  },
+  "devDependencies": {
+    "@types/node": "22.20.4",
+    "typescript": "5.9.3"
+  }
+}

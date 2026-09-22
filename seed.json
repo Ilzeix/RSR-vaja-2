@@ -1,0 +1,310 @@
+{
+  "meta": {
+    "unit": "be-2",
+    "package": "be2-h613"
+  },
+  "authors": [
+    {
+      "id": 1,
+      "name": "Madyson Gleason",
+      "country": "MC"
+    },
+    {
+      "id": 2,
+      "name": "Wilburn Morar",
+      "country": "IT"
+    },
+    {
+      "id": 3,
+      "name": "Helen Medhurst",
+      "country": "GE"
+    },
+    {
+      "id": 4,
+      "name": "Lorena Corkery",
+      "country": "IO"
+    },
+    {
+      "id": 5,
+      "name": "Yasmeen Medhurst",
+      "country": "GU"
+    },
+    {
+      "id": 6,
+      "name": "Daniella Watsica",
+      "country": "IS"
+    }
+  ],
+  "books": [
+    {
+      "id": 1,
+      "title": "The Big Sleep",
+      "isbn": "978-1-950426-43-0",
+      "year": 1985,
+      "authorId": 1
+    },
+    {
+      "id": 2,
+      "title": "A Passage to India",
+      "isbn": "978-0-383-11829-5",
+      "year": 2023,
+      "authorId": 2
+    },
+    {
+      "id": 3,
+      "title": "The Magic Mountain",
+      "isbn": "978-1-7305-2096-9",
+      "year": 1980,
+      "authorId": 3
+    },
+    {
+      "id": 4,
+      "title": "Catch-22",
+      "isbn": "978-1-82439-853-5",
+      "year": 2020,
+      "authorId": 5
+    },
+    {
+      "id": 5,
+      "title": "The Pursuit of Love",
+      "isbn": "978-0-673-39534-4",
+      "year": 2000,
+      "authorId": 6
+    },
+    {
+      "id": 6,
+      "title": "Blood Meridian",
+      "isbn": "978-0-00-154870-1",
+      "year": 2009,
+      "authorId": 6
+    },
+    {
+      "id": 7,
+      "title": "Leaves of Grass",
+      "isbn": "978-0-440-02266-4",
+      "year": 2024,
+      "authorId": 2
+    },
+    {
+      "id": 8,
+      "title": "Anne of Green Gables",
+      "isbn": "978-1-4969-0891-9",
+      "year": 1964,
+      "authorId": 6
+    },
+    {
+      "id": 9,
+      "title": "All the King's Men",
+      "isbn": "978-0-338-04055-8",
+      "year": 2008,
+      "authorId": 1
+    },
+    {
+      "id": 10,
+      "title": "To the Lighthouse",
+      "isbn": "978-0-7433-8971-6",
+      "year": 1983,
+      "authorId": 3
+    },
+    {
+      "id": 11,
+      "title": "The Count of Monte Cristo",
+      "isbn": "978-0-480-19845-9",
+      "year": 1997,
+      "authorId": 1
+    },
+    {
+      "id": 12,
+      "title": "If on a Winter's Night a Traveler",
+      "isbn": "978-1-6903-8169-3",
+      "year": 1992,
+      "authorId": 3
+    },
+    {
+      "id": 13,
+      "title": "Never Let Me Go",
+      "isbn": "978-1-4013-9280-2",
+      "year": 1960,
+      "authorId": 5
+    },
+    {
+      "id": 14,
+      "title": "The Hound of the Baskervilles",
+      "isbn": "978-0-436-06779-2",
+      "year": 1992,
+      "authorId": 3
+    },
+    {
+      "id": 15,
+      "title": "Go Tell It on the Mountain",
+      "isbn": "978-0-527-93632-7",
+      "year": 1997,
+      "authorId": 6
+    }
+  ],
+  "members": [
+    {
+      "id": 1,
+      "name": "Marisol Spencer",
+      "email": "jaden.crona84@hotmail.com",
+      "active": true
+    },
+    {
+      "id": 2,
+      "name": "Gennaro Jaskolski-Zulauf",
+      "email": "keegan23@gmail.com",
+      "active": false
+    },
+    {
+      "id": 3,
+      "name": "Abe Mohr Jr.",
+      "email": "reginald51@gmail.com",
+      "active": false
+    },
+    {
+      "id": 4,
+      "name": "Dovie Reichert",
+      "email": "london.borer@yahoo.com",
+      "active": true
+    },
+    {
+      "id": 5,
+      "name": "Trey Herzog",
+      "email": "travis.kshlerin@gmail.com",
+      "active": true
+    },
+    {
+      "id": 6,
+      "name": "Hazle Mitchell",
+      "email": "sammy.cummings4@hotmail.com",
+      "active": true
+    },
+    {
+      "id": 7,
+      "name": "Mr. Hayden Olson",
+      "email": "bertha48@yahoo.com",
+      "active": false
+    },
+    {
+      "id": 8,
+      "name": "Della Toy",
+      "email": "taya_romaguera74@hotmail.com",
+      "active": true
+    }
+  ],
+  "genres": [
+    {
+      "id": 1,
+      "name": "Young Adult",
+      "minAge": 3
+    },
+    {
+      "id": 2,
+      "name": "Graphic Novel",
+      "minAge": 3
+    },
+    {
+      "id": 3,
+      "name": "Historical Fiction",
+      "minAge": 8
+    },
+    {
+      "id": 4,
+      "name": "Business",
+      "minAge": 9
+    },
+    {
+      "id": 5,
+      "name": "Classic",
+      "minAge": 5
+    }
+  ],
+  "loans": [
+    {
+      "id": 1,
+      "bookId": 5,
+      "memberId": 8,
+      "loanedAt": "2025-03-29",
+      "returned": false,
+      "durationDays": 54
+    },
+    {
+      "id": 2,
+      "bookId": 3,
+      "memberId": 4,
+      "loanedAt": "2025-08-15",
+      "returned": true,
+      "durationDays": 1
+    },
+    {
+      "id": 3,
+      "bookId": 2,
+      "memberId": 8,
+      "loanedAt": "2025-05-08",
+      "returned": true,
+      "durationDays": 54
+    },
+    {
+      "id": 4,
+      "bookId": 2,
+      "memberId": 5,
+      "loanedAt": "2025-09-07",
+      "returned": false,
+      "durationDays": 44
+    },
+    {
+      "id": 5,
+      "bookId": 9,
+      "memberId": 8,
+      "loanedAt": "2025-11-05",
+      "returned": false,
+      "durationDays": 57
+    },
+    {
+      "id": 6,
+      "bookId": 6,
+      "memberId": 5,
+      "loanedAt": "2025-03-12",
+      "returned": true,
+      "durationDays": 43
+    }
+  ],
+  "reviews": [
+    {
+      "id": 1,
+      "bookId": 1,
+      "rating": 3,
+      "comment": "Cauda eaque spiritus corpus."
+    },
+    {
+      "id": 2,
+      "bookId": 10,
+      "rating": 3,
+      "comment": "Cervus villa alo strenuus beatus amoveo."
+    },
+    {
+      "id": 3,
+      "bookId": 1,
+      "rating": 1,
+      "comment": "Absque vesper demitto speculum vinum arto dedecor comptus coadunatio talus."
+    },
+    {
+      "id": 4,
+      "bookId": 6,
+      "rating": 4,
+      "comment": "Ara amplitudo tero vae."
+    },
+    {
+      "id": 5,
+      "bookId": 11,
+      "rating": 5,
+      "comment": "Caput cohaero calco conatus vigor curiositas commemoro decet brevis textor."
+    },
+    {
+      "id": 6,
+      "bookId": 11,
+      "rating": 2,
+      "comment": "Abundans apto strenuus corroboro audax dapifer calculus acies clibanus defetiscor."
+    }
+  ]
+}
