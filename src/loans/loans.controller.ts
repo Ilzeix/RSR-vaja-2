@@ -10,6 +10,7 @@ import {
 } from '@nestjs/common';
 import { LoansService } from './loans.service';
 import { CreateLoanDto } from './dto/create-loan.dto';
+import { UpdateLoanDto } from './dto/update-loan.dto';
 
 @UsePipes(new ValidationPipe({ transform: true }))
 @Controller('loans')
@@ -27,12 +28,13 @@ export class LoansController {
   }
 
   @Post()
-  create(@Body() body: CreateLoanDto) {
+  create(@Body() body: UpdateLoanDto) { //CreatLoanDto --> UpdateLoanDto
     return this.loansService.create(body);
   }
 
   @Patch(':id')
-  update(@Param('id') id: number, @Body() body: CreateLoanDto) {
-    return this.loansService.update(id, body);
-  }
+update(@Param('id') id: number, @Body() body: UpdateLoanDto) {
+  return this.loansService.update(id, body);
+}
+
 }

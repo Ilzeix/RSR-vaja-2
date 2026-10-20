@@ -2,6 +2,7 @@ import { Injectable, NotFoundException } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 import { Loan } from './loan.entity';
+import { UpdateLoanDto } from './dto/update-loan.dto';
 
 @Injectable()
 export class LoansService {
@@ -21,8 +22,14 @@ export class LoansService {
     return this.repo.save(this.repo.create(data));
   }
 
-  async update(id: number, data: Partial<Loan>) {
-    const loan = await this.findOne(id);
-    return this.repo.save(this.repo.merge(loan, data));
+  async update(id: number, updateLoanDto: UpdateLoanDto) {
+    const loan = await this.repo.findOneBy({ id });
+    if (!loan) {
+      throw new NotFoundException(`Loan with ID ${id} not found`); // Popravljeno z ` `
+    }
+
+    Object.assign(loan, updateLoanDto);
+
+    return this.repo.save(loan);
   }
 }
