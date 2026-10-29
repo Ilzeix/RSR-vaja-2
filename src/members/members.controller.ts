@@ -3,6 +3,7 @@ import { Body, Controller, Delete, Get, Param, Patch, Post } from '@nestjs/commo
 import { MembersService } from './members.service';
 import { Member } from './member.entity';
 import { CreateMemberDto } from './dto/create-member.dto';
+import { UpdateMemberDto } from './dto/update-member.dto'; 
 
 @Controller('members')
 export class MembersController {
@@ -24,8 +25,8 @@ export class MembersController {
   }
 
   @Patch(':id')
-  update(@Param('id') id: number, @Body() body: Partial<Member>) {
-    return this.membersService.update(id, body);
+  update(@Param('id') id: string, @Body() updateMemberDto: UpdateMemberDto) {
+  return this.membersService.update(+id, updateMemberDto);
   }
 
   @Delete(':id')

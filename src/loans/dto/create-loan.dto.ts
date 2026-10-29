@@ -1,18 +1,9 @@
-import { IsBoolean, IsInt, IsString } from 'class-validator';
+import { IsNotEmpty, IsDateString } from 'class-validator';
+import { NotInFuture } from '../ni-v-prihodnosti.decorator'; // Popravi glede na to, kako se imenuje tvoja datoteka z dekoraterjem (npr. ni-v-prihodnosti ali not-in-future)
 
 export class CreateLoanDto {
-  @IsInt()
-  bookId: number;
-
-  @IsInt()
-  memberId: number;
-
-  @IsString()
+  @IsNotEmpty()
+  @IsDateString()
+  @NotInFuture({ message: 'loanedAt ne sme biti datum v prihodnosti.' })
   loanedAt: string;
-
-  @IsBoolean()
-  returned: boolean;
-
-  @IsInt()
-  durationDays: number;
 }

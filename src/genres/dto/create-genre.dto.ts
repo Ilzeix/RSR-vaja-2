@@ -1,11 +1,12 @@
-import { IsNotEmpty, IsString, IsInt} from 'class-validator';
+import { IsNotEmpty, IsString, IsInt, Min, Max } from 'class-validator';
 
 export class CreateGenreDto {
   @IsString()
   @IsNotEmpty()
   name: string;
 
-  @IsInt() //naloga 1; zagotavlja, da je minAge celo številoin zavrne decimalke; 
-  //vključiti ga moremo tudi v 'main.ts' ( vključen mora biti globalni ValidationPipe )
+  @IsInt() // zagotavlja, da je minAge celo število in zavrne decimalke
+  @Min(0, { message: 'Minimalna starost mora biti vsaj 0.' })
+  @Max(18, { message: 'Minimalna starost je lahko največ 18.' })
   minAge: number;
 }
